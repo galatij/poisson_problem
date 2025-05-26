@@ -1,0 +1,10 @@
+L = 1                                       # square side length
+n = 100                                     # number of subdvisions
+f = 8*pi*pi*sin(2*pi*x1)*sin(2*pi*x2)       # the forcing term (MISSING PI)
+u1 = 0                                      # Dirichlet: bottom
+u2 = 0                                      # Dirichlet: right
+u3 = 0                                      # Dirichlet: top
+u4 = 0                                      # Dirichlet: left
+uex = sin(2*pi*x1)*sin(2*pi*x2)             # exact solution
+maxit = 100000                              # max iterations
+tol = 1.e-6                                 # tolerance

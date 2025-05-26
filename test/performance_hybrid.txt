@@ -1,0 +1,26 @@
+MPI Scalability Test Results
+============================
+
+### 1 cores ### 
+Number of threads for each rank: 16
+Number of points: 100
+Solving with Jacobi iteration...
+Converged in 5713 iterations! STONKS
+Solver time: 1.3194 seconds
+Execution time: 01.725302005 seconds
+
+### 2 cores ### 
+Number of threads for each rank: 8
+Number of points: 100
+Solving with Jacobi iteration...
+Converged in 5541 iterations! STONKS
+Solver time: 0.979173 seconds
+Execution time: 01.405769189 seconds
+
+### 4 cores ### 
+Number of threads for each rank: 4
+Number of points: 100
+Solving with Jacobi iteration...
+Converged in 5383 iterations! STONKS
+Solver time: 1.02962 seconds
+Execution time: 01.487095619 seconds

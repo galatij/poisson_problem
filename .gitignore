@@ -1,0 +1,8 @@
+*.o
+*.vtk
+# Executables
+*.exe
+*.out
+*.app
+main
+doc

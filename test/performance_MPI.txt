@@ -1,0 +1,23 @@
+MPI Scalability Test Results
+============================
+
+### 1 cores ### 
+Number of points: 100
+Solving with Jacobi iteration...
+Converged in 5713 iterations! STONKS
+Solver time: 3.36175 seconds
+Execution time: 03.766395572 seconds
+
+### 2 cores ### 
+Number of points: 100
+Solving with Jacobi iteration...
+Converged in 5541 iterations! STONKS
+Solver time: 1.92331 seconds
+Execution time: 02.326198124 seconds
+
+### 4 cores ### 
+Number of points: 100
+Solving with Jacobi iteration...
+Converged in 5383 iterations! STONKS
+Solver time: 1.23218 seconds
+Execution time: 01.668220428 seconds
