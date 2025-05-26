@@ -262,12 +262,6 @@ namespace laplaceSolver {
 
 
     scalar_type laplaceProblem::errorFromExact(SolMatrix U_sol, MuparserFun sol_exact){
-        /** \todo: Try to parallelize this avoiding datarace in muParser */
-        //  #ifdef _OPENMP
-        //  int n_threads=omp_get_num_procs()/M_size; // così n=2 non è ottimizzato
-            //  if(M_size==2)
-            //     n_threads=2;
-        //     #endif 
         scalar_type err{};
         //# pragma omp parallel for num_threads(n_threads) reduction(+:err)
         for (size_type i=0; i < U_sol.nrows();++i){

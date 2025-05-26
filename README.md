@@ -25,7 +25,6 @@ A struct holding the solver parameters.
 - solve the problem, performing local computations (using openMP by default), exchanging information using MPI and compute errors.
 - export the solution in `vtk` format.
 
-`MuparserFun`: the class given in the Extras of the course with some slight modifications to enable ...
 
 ## Notes for compiling the code
 In the Makefile, you should change `$(PACS_ROOT)` to where your `pacs-example` folder resides.
@@ -36,7 +35,7 @@ In the Makefile, you should change `$(PACS_ROOT)` to where your `pacs-example` f
 - Run `make doc` to generate documentation.
 
 ## Optional runtime flags
-To run the executable type 
+Input data can be changed at runtime modifying `data.pot`. To run the executable type 
 ```bash
 mpiexec --bind-to none -n <nproc> ./main
 ```
@@ -53,3 +52,4 @@ with possible options:
   - `-v`: be verbose (this will drastically slow down the performances, so use it just for debug purposes).
   - `-p`: visualize the results using mayavi2.
 
+Output will be printed in `performance_test.txt`. 
